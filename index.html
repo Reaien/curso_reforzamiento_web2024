@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <title>Music Store</title>
+</head>
+
+<body class="container-fluid p-0">
+    <!--Sección de navbar-->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-transparent">
+            <div class="container">
+                <a class="navbar-brand text-light mt-2 fw-bold fs-1" href="#">Music <span
+                        class="color-span">Store</span></a>
+                <button class="navbar-toggler bg-dark-subtle" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse mt-3 " id="navbarSupportedContent">
+                    <form class="d-flex " role="search">
+                        <input class="form-control  me-2  bg-dark-subtle" type="text" placeholder="Busca tu artista"
+                            aria-label="Search">
+                        <button class="btn btn-outline-secondary " type="submit">Buscar</button>
+                    </form>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold fs-4">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page text-light" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Destacado</a>
+                        </li>
+                        <li class="nav-item ">
+                            <button type="button"
+                                class="btn bg-color-button px-4 fw-bold fs-4 text-white">Nuevos</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Sección de carrusel-->
+
+    <section class="container mt-5">
+        <div class="row d-flex justify-content-between">
+            <div class="col-md-5 mt-2 mb-5">
+                <h1 class="titulo-carrusel text-white fw-bold">Explora, descubre y colecciona a tu propia manera</h1>
+                <p class="mt-4 fw-bold text-light text-opacity-50">Tenemos miles de colecciones de tus artistas
+                    favoritos
+                    para explorar, ven y
+                    adéntrate en nuestro universo musical</p>
+                <div class="d-flex gap-5">
+                    <button type="button" class="btn bg-color-button px-4 fw-bold fs-4 text-white">Explora
+                        ahora</button>
+                    <button type="button" class="btn btn-secondary bg-gradient px-4 fw-bold fs-4 ">Clásicos</button>
+                </div>
+            </div>
+            <div id="carouselExampleAutoplaying" class="carousel slide col-md-6 " data-bs-ride="carousel">
+                <div class="carousel-inner rounded ">
+                    <div class="carousel-item active shadow ">
+                        <img src="/img/carrusel_1.jpg" class="d-block w-100 rounded" alt="carrusel1">
+                    </div>
+                    <div class="carousel-item shadow ">
+                        <img src="/img/carrusel_2.jpg" class="d-block w-100 rounded " alt="carrusel2">
+                    </div>
+                    <div class="carousel-item shadow ">
+                        <img src="/img/carrusel_3.jpg" class="d-block w-100 rounded" alt="carrusel3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--container sponsors-->
+    <section class="container mt-5">
+        <div class="row d-flex text-center justify-content-evenly align-items-center ">
+            <div class="opacity-75 col-md-4">
+                <img class="w-75 mt-5" src="/img/logo_banda1.png" alt="logo1">
+            </div>
+            <div class="opacity-75 col-md-4">
+                <img class="w-50 mt-5" src="/img/logo_banda2.png" alt="logo2">
+            </div>
+            <div class="opacity-75 col-md-4">
+                <img class=" w-75 mt-3" src="/img/logo_banda3.png" alt="logo3">
+            </div>
+        </div>
+    </section>
+
+    <!--Nuevo album-->
+    <section class="container mt-5">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-4 text-center mt-5">
+                <h2 class="fw-bold text-white">Último lanzamiento </h2>
+                <h3 class="fw-bolder text-white text-opacity-50">Nuevo disco de la banda de Muse - Black Holes and
+                    Revelations</h3>
+            </div>
+        </div>
+        <div class="row mt-5 d-flex align-items-center">
+            <div class="col-md-6"><img class="w-75 rounded" src="/img/album_portrait_main.jpg" alt="album_portrait">
+            </div>
+            <div class="col-md-5">
+                <h3 class=" text-light text-opacity-75">"Black Holes and Revelations" de Muse, lanzado en
+                    2006, es un álbum que muestra la evolución de la banda hacia un sonido
+                    más expansivo y experimental, combinando elementos de rock alternativo, rock espacial y electrónica.
+                    Con canciones como
+                    "Starlight", "Supermassive Black Hole" y "Knights of Cydonia".</h3>
+            </div>
+        </div>
+    </section>
+
+
+    <!--cards productos-->
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="fw-bold text-white">Colección</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 ">
+                <div class="card mb-3 bg-white bg-opacity-50">
+                    <img src="img/disco_1.webp" class="rounded my-3 mx-auto card-img-top w-75" alt="producto">
+                    <p class="fw-semibold ms-3 fs-5 text-white text-opacity-50">The Beatles</p>
+                    <div class="card-body text-center d-flex justify-content-between">
+                        <h5 class="card-title text-white fw-bold text-opacity-75">Abbey Road</h5>
+                        <p class="card-text fw-bold text-white text-opacity-75">$25.990</p>
+                    </div>
+                    <button type="button"
+                        class="btn bg-color-button mx-5 mb-2 fw-semibold fs-4 text-white">Comprar</button>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card mb-3 bg-white bg-opacity-50">
+                    <img src="img/disco_2.webp" class="rounded my-3 mx-auto card-img-top w-75" alt="producto">
+                    <p class="fw-semibold ms-3 fs-5 text-white text-opacity-50">Deep Purple</p>
+                    <div class="card-body text-center d-flex justify-content-between">
+                        <h5 class="card-title text-white fw-bold text-opacity-75">Machine Head</h5>
+                        <p class="card-text fw-bold text-white text-opacity-75">$25.990</p>
+                    </div>
+                    <button type="button"
+                        class="btn bg-color-button mx-5 mb-2 fw-semibold fs-4 text-white">Comprar</button>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card mb-3 bg-white bg-opacity-50">
+                    <img src="img/disco_3.webp" class="rounded my-3 mx-auto card-img-top w-75" alt="producto">
+                    <p class="fw-semibold ms-3 fs-5 text-white text-opacity-50">David Bowie</p>
+                    <div class="card-body text-center d-flex justify-content-between">
+                        <h5 class="card-title text-white fw-bold text-opacity-75">Aladdin Sane</h5>
+                        <p class="card-text fw-bold text-white text-opacity-75">$25.990</p>
+                    </div>
+                    <button type="button"
+                        class="btn bg-color-button mx-5 mb-2 fw-semibold fs-4 text-white">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--separador-->
+
+    <br>
+    <br>
+    <br>
+
+    <!--footer-->
+    <footer class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-4 mt-5 text-center">
+                <p class=" text-light mt-2 fw-bold fs-3">Music <span class="color-span">Store</span></p>
+                <p class="text-white text-opacity-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                    officiis
+                    laudantium veniam possimus
+                    necessitatibus distinctio et repellendus vitae tempore laborum debitis suscipit quas exercitationem,
+                    corrupti labore? Distinctio explicabo consectetur magnam.</p>
+            </div>
+            <div class="col-md-4 mt-5 text-center">
+                <p class="text-light mt-2 fw-bold fs-3">Sobre nosotros</p>
+                <div class="text-white text-opacity-75">
+                    <p>Nosotros</p>
+                    <p>Nuestros productos</p>
+                    <p>Misión</p>
+                </div>
+            </div>
+            <div class="col-md-4 mt-5 text-center">
+                <p class="text-light mt-2 fw-bold fs-3">Nuestras Redes sociales</p>
+                <div class="d-flex gap-3 justify-content-center">
+                    <img src="/img/facebook_icon.png" alt="logo_face">
+                    <img src="/img/tik-tok_icon.png" alt="logo_tiktok">
+                    <img src="/img/instagram_icon.png" alt="logo_insta">
+                    <img src="/img/whatsapp_icon.png" alt="logo_wssp">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
